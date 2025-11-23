@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "patiladi09/travel-agency"
+        IMAGE_NAME = "saii950/travel-agency"
         IMAGE_TAG = "latest"
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Patiladitya45/travel-agency.git'
+                git branch: 'main', url: 'https://github.com/Saip950/travels.git'
             }
         }
 
@@ -56,5 +56,6 @@ pipeline {
         }
     }
 }
+
 
 
